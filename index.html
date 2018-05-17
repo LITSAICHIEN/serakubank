@@ -1,0 +1,301 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>せらく銀行</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/jquery.bxslider.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery.bxslider.min.js"></script>
+  <script src="js/jquery.tabslet.js"></script>
+  <script>
+  $(document).ready(function(){
+    // assign the slider to a variable
+    var slider = $('#slider2').bxSlider({
+auto: true,
+pause: 5000,
+speed: 1000,
+mode: 'horizontal',
+prevText: '<',
+nextText: '>',
+pager: true,
+//easing: 'easeOutBounce',
+pagerCustom: '.bx-pager'
+});
+    $('#tabs').tabslet();
+  });
+</script>
+</head>
+
+<body>
+  <!--ヘッダー-->
+  <header>
+    <div id="logo">
+    <a href="#"><img src="images/logo.png" alt="せらく銀行"></a>
+  </div>
+  <div id="sidepart" class="clearfix">
+    <div class="site">
+      <ul>
+        <li><a href="#">global site</a></li>
+        <li><a href="#">site map</a></li>
+      </ul>
+    </div>
+    <div class="frs">
+        <p>金融機関コード:0917&nbsp;&nbsp;
+        文字サイズ<a href="#"><img src="images/fontsize_s.png" alt=""></a><a href="#"><img src="images/fontsize_m.png" alt=""></a><a href="#"><img src="images/fontsize_l.png" alt=""></a></li>
+        &nbsp;<input type="text" name="search" placeholder="検索ワードを入力"><input type="image" src="images/search.png" alt="検索">
+      </p>
+    </div>
+  </div>
+  </header>
+  <!--ナビゲーション-->
+  <nav class="clearfix">
+    <ul>
+      <li><a href="#">個人のお客様</a></li>
+      <li><a href="#">法人のお客様</a></li>
+      <li><a href="#">株主・投資者の皆様</a></li>
+      <li><a href="#">採用情報</a></li>
+      <li><a href="#">せらく銀行について</a></li>
+    </ul>
+  </nav>
+  <!--スライドショー-->
+  <div id="slider">
+    <div class="bg_img">
+      <ul id="slider2" class="slider">
+    <li><img src="images/main01.png" alt="せらく銀行"></li>
+    <li><img src="images/main02.png" alt="外貨自動積み立サービス"></li>
+    <li><img src="images/main03.png" alt="せらく銀行カードローン"></li>
+  </ul>
+</div>
+<div class="bx-pager">
+    <a data-slide-index="0" href=""><img src="images/main01_thumb.png" alt=""></a>
+    <a data-slide-index="1" href=""><img src="images/main02_thumb.png" alt=""></a>
+    <a data-slide-index="2" href="" class="thumb-edge"><img src="images/main03_thumb.png" alt=""></a>
+  </div>
+</div>
+  <!--コンテンツ-->
+  <div id="contents" class="clearfix">
+    <div id="main" class="clearfix">
+      <div class="part1">
+        <div class="personal">
+          <h2>個人のお客様</h2>
+          <div class="box1">
+          <ul>
+            <li><a href="#">&gt;口座をひらく</a></li>
+            <li><a href="#">&gt;投資信託</a></li>
+            <li><a href="#">&gt;バンクイック</a></li>
+          </ul>
+        </div>
+        <div class="box2">
+            <ul>
+            <li><a href="#">&gt;住宅ローン</a></li>
+            <li><a href="#">&gt;外資預金</a></li>
+            <li><a href="#">&gt;キャンぺーン一覧</a></li>
+          </ul>
+        </div>
+      </div>
+        <div class="houjin">
+          <h2>法人のお客様</h2>
+          <div class="box1">
+          <ul>
+            <li><a href="#">&gt;口座をひらく</a></li>
+            <li><a href="#">&gt;CSRの取り組み</a></li>
+            <li><a href="#">&gt;CSRの取り組み</a></li>
+          </ul>
+        </div>
+        <div class="box2">
+          <ul>
+            <li><a href="#">&gt;でんさい</a></li>
+            <li><a href="#">&gt;地球環境問題への対応</a></li>
+            <li><a href="#">&gt;Global Website</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="part2">
+      <div class="invest">
+        <h2>株主・投資者の皆様</h2>
+        <div class="box1">
+          <ul>
+            <li><a href="#">&gt;決算広告</a></li>
+          </ul>
+        </div>
+        <div class="box2">
+          <ul>
+            <li><a href="#">&gt;社債情報</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="recruit">
+        <h2>採用情報</h2>
+        <div class="box1">
+          <ul>
+            <li><a href="#">&gt;新卒採用</a></li>
+            <li><a href="#">&gt;海外現地採用</a></li>
+          </ul>
+        </div>
+        <div class="box2">
+          <ul>
+            <li><a href="#">&gt;中途採用</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="news" class="clearfix">
+      <div id="tabs" class="tabs_default">
+        <ul class="etabs clearfix">
+          <li class="tab"><a href="#tab_shincyaku">新着情報</a></li>
+          <li class="tab"><a href="#tab_release">ニュースリリース</a></li>
+          <li class="tab"><a href="#tab_campaign">キャンぺーン</a></li>
+          <li class="tab"><a href="#tab_notification">お知らせ</a></li>
+        </ul>
+        <div id="tab_shincyaku">
+      <ul>
+        <li><time datetime="2015-06-10">2015年6月10日</time><span class="notification">お知らせ</span><a href="#">【インターネットバンキング】パスワード等を入力させる為メールが届いても、絶対に入力しないでください！</a></li>
+        <li><time datetime="2015-05-10">2015年5月10日</time><span class="campaign">キャンぺーン</span><a href="#">抽選で200人に1万円が当たる！夏の資産運用キャンペーン実施中。</a></li>
+        <li><time datetime="2015-04-10">2015年4月10日</time><span class="campaign">キャンぺーン</span><a href="#">平成27年5月25日(月)より「子ども口座開設キャンぺーン」を開始します。</a></li>
+        <li><time datetime="2015-03-10">2015年3月10日</time><span class="notification">お知らせ</span><a href="#">「年金情報流出」を口実にした振込め詐欺や個人情報の搾取にご注意ください。</a></li>
+        <li><time datetime="2015-02-10">2015年2月10日</time><span class="release">ニュースリリース</span><a href="#">スウェーデンせらく銀行OO支店開業についてpdf(97KB)</a></li>
+        <li><time datetime="2015-01-10">2015年1月10日</time><span class="notification">お知らせ</span><a href="#">お客様の情報のSRKグループでの共同利用について</a></li>
+        <li><time datetime="2014-12-10">2014年12月10日</time><span class="notification">お知らせ</span><a href="#">LINE公式アカウントを開設しました！</a></li>
+        <li><time datetime="2014-11-10">2014年11月10日</time><span class="release">ニュースリリース</span><a href="#">【せらくダイレクト】ワンタイムパスワードの提供開始についてpdf(130KB)</a></li>
+        <li><time datetime="2014-10-10">2014年10月10日</time><span class="campaign">キャンぺーン</span><a href="#">抽選でカタログギフトが当たる！保険の見直しキャンぺーン実施中</a></li>
+      </ul>
+    </div>
+    <div id="tab_release">
+  <ul>
+    <li><time datetime="2015-02-10">2015年2月10日</time><span class="release">ニュースリリース</span><a href="#">スウェーデンせらく銀行OO支店開業についてpdf(97KB)</a></li>
+    <li><time datetime="2014-11-10">2014年11月10日</time><span class="release">ニュースリリース</span><a href="#">【せらくダイレクト】ワンタイムパスワードの提供開始についてpdf(130KB)</a></li>
+  </ul>
+</div>
+<div id="tab_campaign">
+<ul>
+<li><time datetime="2015-05-10">2015年5月10日</time><span class="campaign">キャンぺーン</span><a href="#">抽選で200人に1万円が当たる！夏の資産運用キャンペーン実施中。</a></li>
+<li><time datetime="2015-04-10">2015年4月10日</time><span class="campaign">キャンぺーン</span><a href="#">平成27年5月25日(月)より「子ども口座開設キャンぺーン」を開始します。</a></li>
+<li><time datetime="2014-10-10">2014年10月10日</time><span class="campaign">キャンぺーン</span><a href="#">抽選でカタログギフトが当たる！保険の見直しキャンぺーン実施中</a></li>
+</ul>
+</div>
+<div id="tab_notification">
+<ul>
+<li><time datetime="2015-06-10">2015年6月10日</time><span class="notification">お知らせ</span><a href="#">【インターネットバンキング】パスワード等を入力させる為メールが届いても、絶対に入力しないでください！</a></li>
+<li><time datetime="2015-03-10">2015年3月10日</time><span class="notification">お知らせ</span><a href="#">「年金情報流出」を口実にした振込め詐欺や個人情報の搾取にご注意ください。</a></li>
+<li><time datetime="2015-01-10">2015年1月10日</time><span class="notification">お知らせ</span><a href="#">お客様の情報のSRKグループでの共同利用について</a></li>
+<li><time datetime="2014-12-10">2014年12月10日</time><span class="notification">お知らせ</span><a href="#">LINE公式アカウントを開設しました！</a></li>
+</ul>
+</div>
+    </div>
+    </div>
+    </div>
+    <div id="sub" class="clearfix">
+      <div class="internetbank">
+        <h2>インターネットバンキング</h2>
+        <p>せらく銀行インターネットバンキング</p>
+        <ul>
+          <li><a href="#">ログインサービス</a></li>
+          <li><a href="#">初めてログインする方</a></li>
+        </ul>
+        <p><a href="#">&gt;パスワードを忘れた方はこちら</a></p>
+      </div>
+      <div class="service, clearfix">
+        <h2>サービスのご案内</h2>
+        <div class="box3">
+        <ul>
+          <li><a href="#">店舗<br>・<br>ATM検索</a></li>
+          <li><a href="#">資料請求</a></li>
+          <li><a href="#">金利一覧</a></li>
+        </ul>
+      </div>
+        <div class="box4">
+        <ul>
+          <li><a href="#">手数料</a></li>
+          <li><a href="#">よくある<br>ご質問</a></li>
+          <li><a href="#">投資信託基準<br>価格一覧</a></li>
+        </ul>
+      </div>
+      </div>
+      <div class="information">
+        <ul>
+          <li><a href="#">口座開設のご案内</a></li>
+          <li><a href="#">金融経済ニュース</a></li>
+          <li><a href="#">詐欺に注意！！</a></li>
+        </ul>
+      </div>
+      <div class="cm">
+        <ul>
+          <li><a href="#">テレビCM・動画のご紹介</a></li>
+          <li><a href="#">今から考える教育ローン</a></li>
+        </ul>
+      </div>
+      <p class="lose"><a href="#"><img src="images/caution.png" alt="通帳・印鑑キャッシュカードを紛失・盗難された方へ"></a></p>
+  </div>
+</div>
+  <!--アサイド-->
+  <aside class="clearfix">
+    <div class="personalaside">
+      <h2>個人のお客様</h2>
+      <ul>
+        <li><a href="#">普通預金</a></li>
+        <li><a href="#">定期預金・積立</a></li>
+        <li><a href="#">外貨預金</a></li>
+        <li><a href="#">外債</a></li>
+        <li><a href="#">ファンドラップ</a></li>
+        <li><a href="#">個人向け国債</a></li>
+        <li><a href="#">退職金運用のご案内</a></li>
+      </ul>
+    </div>
+    <div class="houjinaside">
+      <h2>法人のお客様</h2>
+      <ul>
+        <li><a href="#">資金調達</a></li>
+        <li><a href="#">国際業務・外為取引</a></li>
+        <li><a href="#">福利厚生</a></li>
+        <li><a href="#">事業戦略・経営相談</a></li>
+        <li><a href="#">振込・入金確認の効率化</a></li>
+        <li><a href="#">電子記録債権・手形関連</a></li>
+      </ul>
+    </div>
+    <div class="investaside">
+      <h2>株主・投資者の皆様</h2>
+      <ul>
+        <li><a href="#">せらくグループの概要</a></li>
+        <li><a href="#">決算広告</a></li>
+        <li><a href="#">社債情報</a></li>
+      </ul>
+    </div>
+    <div class="recruitaside">
+      <h2>採用情報</h2>
+      <ul>
+        <li><a href="#">新卒採用</a></li>
+        <li><a href="#">キャリア採用</a></li>
+        <li><a href="#">海外現地採用</a></li>
+        <li><a href="#">契約社員のお仕事</a></li>
+        <li><a href="#">派遣社員のお仕事</a></li>
+      </ul>
+    </div>
+    <div class="bankaside">
+      <h2>せらく銀行について</h2>
+      <ul>
+        <li><a href="#">ごあいさつ</a></li>
+        <li><a href="#">事業内容</a></li>
+        <li><a href="#">企業の社会的責任(CSR)</a></li>
+        <li><a href="#">役員一覧</a></li>
+        <li><a href="#">組織体制</a></li>
+        <li><a href="#">お問い合わせ先</a></li>
+      </ul>
+    </div>
+  </aside>
+  <div id="navbottom" class="clearfix">
+    <ul>
+      <li><a href="#">お客様の個人情報保護について</a></li>
+      <li><a href="#">金融商品勧誘方針</a></li>
+      <li><a href="#">法人等のお客様の情報について</a></li>
+      <li><a href="#">本サイトのご利用にあたって</a></li>
+      <li><a href="#">反社会勢力に対する基本方針</a></li>
+    </ul>
+  </div>
+  <!--フッター-->
+  <footer>
+    <p class="copyright"><small>Copyright&copy;2018 Seraku Banking Corporation.All Rights Reserved.</small></p>
+  </footer>
+</body>
+</html>
